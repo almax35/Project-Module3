@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <link rel="stylesheet" href="../view/static/hello-page.css">
   <title>Mega quests</title>
 </head>
@@ -28,7 +27,7 @@
   </div>
 </div>
 <div>
-  <button id="submitButton" class="btn" type="submit" onclick="window.location='/ready'">Submit</button>
+  <button id="submitButton" class="btn" type="submit" onclick="window.location='/programmer'">Submit</button>
 </div>
 <p class="message" id="message"></p>
 <br>
