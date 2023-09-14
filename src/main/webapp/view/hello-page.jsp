@@ -27,7 +27,7 @@
   </div>
 </div>
 <div>
-  <button id="submitButton" class="btn" type="submit" onclick="window.location='/programmer'">Submit</button>
+  <button id="submitButton" class="btn" type="submit" onclick="window.location='/programmer '">Submit</button>
 </div>
 <p class="message" id="message"></p>
 <br>

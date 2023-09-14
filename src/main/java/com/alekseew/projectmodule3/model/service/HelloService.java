@@ -10,7 +10,7 @@ public class HelloService  {
         User user = new User(req);
         HttpSession session=req.getSession();
         session.setAttribute("ip",user.getIp());
-        Date time=new Date(session.getCreationTime());
+        Date time=new Date();
         session.setAttribute("time", time);
         return session;
     }
