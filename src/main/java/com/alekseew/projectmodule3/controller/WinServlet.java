@@ -11,14 +11,14 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name="win", value = "/win")
+@WebServlet(name = "win", value = "/win")
 public class WinServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session=req.getSession();
-        String result= TimeService.getTime(session);
-        session.setAttribute("result",result);
-        RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/view/win.jsp");
+        HttpSession session = req.getSession();
+        String result = TimeService.getTime(session);
+        session.setAttribute("result", result);
+        RequestDispatcher dispatcher = session.getServletContext().getRequestDispatcher("/view/win.jsp");
         dispatcher.forward(req, resp);
     }
 }

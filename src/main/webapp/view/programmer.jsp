@@ -5,13 +5,13 @@
     <title>BeProgrammer</title>
 </head>
 <body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
-    <h1>Are you want to be a programmer?</h1>
-    <button id="yes" class="btn" type="yes" onclick="window.location='/language'">Yes</button>
-    <button id="no" class="btn" type="no" onclick="buttonNoClick()">No</button>
+<h1>Are you want to be a programmer?</h1>
+<button id="yes" class="btn" type="yes" onclick="window.location='/language'">Yes</button>
+<button id="no" class="btn" type="no" onclick="buttonNoClick()">No</button>
 </body>
 
 <script>
-    function buttonNoClick(){
+    function buttonNoClick() {
         let button = document.getElementById("no");
         let windowWidth = window.innerWidth;
         let windowHeight = window.innerHeight;

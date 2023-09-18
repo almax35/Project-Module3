@@ -15,7 +15,7 @@ public class UniversityServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
-        RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/view/university.jsp");
+        RequestDispatcher dispatcher = session.getServletContext().getRequestDispatcher("/view/university.jsp");
         dispatcher.forward(req, resp);
     }
 }

@@ -34,8 +34,9 @@
 <br>
 <br>
 <h3>Information: </h3>
-<h4>Player ip: ${ip}</h4>
+<h4>Player ip: ${user}</h4>
 <h4>Staring time: ${time}</h4>
+<h4>Played times: ${timesPlayed}</h4>
 </body>
 <script>
   function validation() {

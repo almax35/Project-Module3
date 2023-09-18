@@ -11,15 +11,15 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name="language", value = "/language")
+@WebServlet(name = "language", value = "/language")
 public class LanguageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String language=req.getParameter("variant");
-        HttpSession session=req.getSession();
-        String message=LanguageService.getMessage(language);
+        String language = req.getParameter("variant");
+        HttpSession session = req.getSession();
+        String message = LanguageService.getMessage(language);
         session.setAttribute("message", message);
-        RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/view/language.jsp");
+        RequestDispatcher dispatcher = session.getServletContext().getRequestDispatcher("/view/language.jsp");
         dispatcher.forward(req, resp);
     }
 }

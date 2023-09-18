@@ -11,13 +11,13 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name="init",value = "/init")
+@WebServlet(name = "init", value = "/init")
 public class InitServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session= req.getSession();
+        HttpSession session = req.getSession();
         InitService.getSession(session);
-        RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/hello");
+        RequestDispatcher dispatcher = session.getServletContext().getRequestDispatcher("/hello");
         dispatcher.forward(req, resp);
     }
 }

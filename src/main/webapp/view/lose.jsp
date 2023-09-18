@@ -11,6 +11,6 @@
 </h1>
 <h2>${result}</h2>
 <img src="../view/img/sad-cat.jpg">
-<button id="returnToStart" class="btn"  onclick="window.location='/hello'">Start page</button>
+<button id="returnToStart" class="btn" onclick="window.location='/hello'">Start page</button>
 </body>
 </html>
