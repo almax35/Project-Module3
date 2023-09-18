@@ -1,10 +1,9 @@
 package com.alekseew.projectmodule3.model.service;
 
-import jakarta.servlet.http.HttpSession;
 import org.junit.jupiter.api.Test;
-import org.springframework.mock.web.MockHttpSession;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LanguageServiceTest {
     @Test
@@ -16,7 +15,7 @@ public class LanguageServiceTest {
                 () -> assertEquals("How old are you?", LanguageService.getMessage("Pascal")),
                 () -> assertEquals("You can choose better", LanguageService.getMessage("Python")),
                 () -> assertEquals("Think again", LanguageService.getMessage("JavaScript")),
-                () -> assertEquals("choose language",LanguageService.getMessage(null))
+                () -> assertEquals("choose language", LanguageService.getMessage(null))
         );
     }
 }

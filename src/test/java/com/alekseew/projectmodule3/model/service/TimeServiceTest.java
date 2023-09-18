@@ -14,7 +14,7 @@ public class TimeServiceTest {
         InitService.getSession(session);
         HelloService.getSessionData(session);
         Thread.sleep(3000);
-        String message=TimeService.getTime(session);
-        assertEquals("You play: 3 seconds",message);
+        String message = TimeService.getTime(session);
+        assertEquals("You play: 3 seconds", message);
     }
 }
