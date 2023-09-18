@@ -15,8 +15,8 @@ import java.io.IOException;
 public class WinServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String result= TimeService.getTime(req);
         HttpSession session=req.getSession();
+        String result= TimeService.getTime(session);
         session.setAttribute("result",result);
         RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/view/win.jsp");
         dispatcher.forward(req, resp);

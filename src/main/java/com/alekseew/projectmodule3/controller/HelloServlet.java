@@ -13,8 +13,10 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HelloService helloService=new HelloService();
-        HttpSession session=helloService.getSessionData(req);
+        HttpSession session=req.getSession();
+        HelloService.getSessionData(session);
+        //Не было возможности поместить добавление user ip  в service
+        session.setAttribute("user",req.getRemoteAddr());
         RequestDispatcher dispatcher=session.getServletContext().getRequestDispatcher("/view/hello-page.jsp");
         dispatcher.forward(req, resp);
     }
