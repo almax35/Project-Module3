@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../view/static/hello-page.css">
   <title>Mega quests</title>
 </head>
-<body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
+<body >
 <h1>Welcome to world of quests
 </h1>
 <h2>Choose quest:

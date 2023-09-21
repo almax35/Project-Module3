@@ -5,7 +5,7 @@
     <title>Lose</title>
 </head>
 
-<body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
+<body>
 <h1>
     You are lose!
 </h1>

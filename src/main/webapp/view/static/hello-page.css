@@ -1,3 +1,13 @@
+html {
+    background-image: url("/view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .form_radio_group {
     display: inline-block;
     overflow: hidden;

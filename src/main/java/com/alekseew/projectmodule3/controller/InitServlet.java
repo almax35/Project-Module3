@@ -1,6 +1,6 @@
 package com.alekseew.projectmodule3.controller;
 
-import com.alekseew.projectmodule3.model.service.InitService;
+import com.alekseew.projectmodule3.service.InitService;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

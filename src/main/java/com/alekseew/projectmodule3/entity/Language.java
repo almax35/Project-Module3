@@ -1,4 +1,4 @@
-package com.alekseew.projectmodule3.model.entity;
+package com.alekseew.projectmodule3.entity;
 
 public enum Language {
     C,

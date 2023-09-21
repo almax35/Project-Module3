@@ -1,4 +1,4 @@
-package com.alekseew.projectmodule3.model.service;
+package com.alekseew.projectmodule3.service;
 
 
 import jakarta.servlet.http.HttpSession;
@@ -22,5 +22,20 @@ public class HelloServiceTest {
                 () -> assertEquals(count, 0),
                 () -> assertNotNull(date)
         );
+    }
+    @Test
+    void whenHelloServiceCalledAgain_thenIncrementCount(){
+        HttpSession session = new MockHttpSession();
+        InitService.getSession(session);
+        HelloService.getSessionData(session);
+        HelloService.getSessionData(session);
+        Integer count1 = (Integer) session.getAttribute("timesPlayed");
+        HelloService.getSessionData(session);
+        Integer count2 = (Integer) session.getAttribute("timesPlayed");
+        assertAll(
+                () -> assertEquals(count1, 1),
+                () -> assertEquals(count2, 2)
+        );
+
     }
 }

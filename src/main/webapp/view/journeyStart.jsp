@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../view/static/journeyStart.css">
     <title>Start of learning</title>
 </head>
-<body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
+<body >
 <h1>How will you start your journey?</h1>
 <button id="Yourself" class="btn" onclick="window.location='/win'">Yourself</button>
 <button id="GoToUniversity" class="btn" onclick="window.location='/university'">Go to university</button>

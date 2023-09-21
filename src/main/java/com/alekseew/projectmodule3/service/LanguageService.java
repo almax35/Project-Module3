@@ -1,6 +1,6 @@
-package com.alekseew.projectmodule3.model.service;
+package com.alekseew.projectmodule3.service;
 
-import com.alekseew.projectmodule3.model.entity.Language;
+import com.alekseew.projectmodule3.entity.Language;
 
 
 public class LanguageService {

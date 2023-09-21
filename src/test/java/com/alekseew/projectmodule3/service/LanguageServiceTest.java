@@ -1,4 +1,4 @@
-package com.alekseew.projectmodule3.model.service;
+package com.alekseew.projectmodule3.service;
 
 import org.junit.jupiter.api.Test;
 

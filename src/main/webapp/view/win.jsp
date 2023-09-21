@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../view/static/lose.css">
     <title>Winner</title>
 </head>
-<body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
+<body>
 <h1>You are won!</h1>
 <h2>${result}</h2>
 <br>

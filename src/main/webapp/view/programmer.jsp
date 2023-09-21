@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../view/static/beProgrammer.css">
     <title>BeProgrammer</title>
 </head>
-<body background="../view/img/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
+<body>
 <h1>Are you want to be a programmer?</h1>
 <button id="yes" class="btn" type="yes" onclick="window.location='/language'">Yes</button>
 <button id="no" class="btn" type="no" onclick="buttonNoClick()">No</button>
